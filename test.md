@@ -1,3 +1,7 @@
+layout: page
+title: "TEST"
+permalink: /TEST/
+
 hello
 this is a
 ```
