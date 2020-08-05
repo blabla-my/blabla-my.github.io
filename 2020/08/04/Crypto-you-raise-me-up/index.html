@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+  <title>Crypto: you_raise_me_up | my blog</title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+<meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="my blog" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/"><img src="/images/blabla.jpg" alt=""></a>
+    <div class="nickname"><a href="/">blabla-my</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">分类</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">Crypto: you_raise_me_up</div>
+      <div class="post-attach">
+        <span class="post-pubtime">2020-08-04</span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="类别 | categories"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/Crypto/" title="查看 Crypto 分类">
+                    <b>#</b> Crypto
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签 | tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/Crypto/" title="查看 Crypto 标签">
+                    <b>#</b> Crypto
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h3 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> Crypto.Util.number <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line">n = <span class="number">2</span> ** <span class="number">512</span></span><br><span class="line">m = random.randint(<span class="number">2</span>, n<span class="number">-1</span>) | <span class="number">1</span></span><br><span class="line">c = pow(m, bytes_to_long(flag), n)</span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;m = &#x27;</span> + str(m))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">&#x27;c = &#x27;</span> + str(c))</span><br><span class="line"><span class="comment"># m = 391190709124527428959489662565274039318305952172936859403855079581402770986890308469084735451207885386318986881041563704825943945069343345307381099559075</span></span><br><span class="line"><span class="comment"># c = 6665851394203214245856789450723658632520816791621796775909766895233000234023642878786025644953797995373211308485605397024123180085924117610802485972584499</span></span><br></pre></td></tr></table></figure>
+
+<p>一道离散对数的题目，即</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">m^flag = c  (mod n)</span><br><span class="line">n = <span class="number">2</span>^<span class="number">512</span></span><br><span class="line"><span class="comment">#已知m与c，求解flag</span></span><br></pre></td></tr></table></figure>
+
+<p>思路如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">m^flag = c (mod <span class="number">2</span>^j), <span class="number">1</span>&lt;= j &lt;= <span class="number">512</span></span><br><span class="line"><span class="comment">#设f(j) = flag % (2^j)</span></span><br><span class="line"><span class="comment">#m(j) = m % (2^j)</span></span><br><span class="line"><span class="comment">#c(j) = c % (2^j)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#由于phi(2^j) = 2^(j-1), 则总有 m^flag = m^f(j-1) = c (mod 2^j)</span></span><br><span class="line"><span class="comment">#在已知f(j)的情况下，f(j+1) = f(j) 或 f(j)+2^j</span></span><br><span class="line"><span class="comment">#对于上式计算出的f(j+1),检查其是否满足 m^f(j+1) = c (mod 2^(j+2))</span></span><br><span class="line">    <span class="comment">#若满足，保留f(j+1)</span></span><br><span class="line">    <span class="comment">#不满足，丢弃这个结果</span></span><br><span class="line"><span class="comment">#一直计算到j = 511</span></span><br></pre></td></tr></table></figure>
+
+<p>exploit：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2 <span class="keyword">as</span> g</span><br><span class="line"><span class="keyword">import</span> libnum <span class="keyword">as</span> l</span><br><span class="line">m = <span class="number">391190709124527428959489662565274039318305952172936859403855079581402770986890308469084735451207885386318986881041563704825943945069343345307381099559075</span></span><br><span class="line">c = <span class="number">6665851394203214245856789450723658632520816791621796775909766895233000234023642878786025644953797995373211308485605397024123180085924117610802485972584499</span></span><br><span class="line">n = <span class="number">2</span>**<span class="number">512</span></span><br><span class="line">fi = <span class="number">2</span>**<span class="number">511</span></span><br><span class="line"></span><br><span class="line">i=<span class="number">5</span></span><br><span class="line">N = <span class="number">2</span>**i</span><br><span class="line">phi = N//<span class="number">2</span></span><br><span class="line">res = [<span class="number">5</span>,<span class="number">13</span>]</span><br><span class="line">tmp_res = []</span><br><span class="line">_m = m%N</span><br><span class="line">print(_m)</span><br><span class="line">_c = c%N</span><br><span class="line">print(_c)</span><br><span class="line"></span><br><span class="line"><span class="comment">#print(g.powmod(_c,phi,N))</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">6</span>,<span class="number">513</span>):</span><br><span class="line">    N = N*<span class="number">2</span></span><br><span class="line">    phi = phi*<span class="number">2</span></span><br><span class="line">    _m = m % N</span><br><span class="line">    _c = c % N</span><br><span class="line">    tmp_res = []</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> res:</span><br><span class="line">        <span class="keyword">if</span> g.powmod(_m,j,N) == _c:</span><br><span class="line">            tmp_res.append(j)</span><br><span class="line">        <span class="keyword">if</span> g.powmod(_m,j+phi//<span class="number">2</span>,N) == _c:</span><br><span class="line">            tmp_res.append(j+phi//<span class="number">2</span>)</span><br><span class="line">    res = tmp_res</span><br><span class="line">    tmp_res = []</span><br><span class="line"></span><br><span class="line">print(l.n2s(res[<span class="number">0</span>]))</span><br><span class="line">print(l.n2s(res[<span class="number">1</span>]))</span><br></pre></td></tr></table></figure>
+
+<p>flag{5f95ca93-1594-762d-ed0b-a9139692cb4a}</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/08/04/HAPPYNEWYEAR2019/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>PREV</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">2020-08-04</span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="类别 | categories"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/Crypto/" title="查看 Crypto 分类">
+                        <b>#</b> Crypto
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签 | tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/Crypto/" title="查看 Crypto 标签">
+                        <b>#</b> Crypto
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2020/08/05/too-secure/" target="_self">
+                <span>NEXT</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%EF%BC%9A"><span class="toc-text">题目：</span></a></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+      </div>
+    
+  </div>
+
+  
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/blabla-my/blabla-my.github.io">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © Oranges 2020</a>
+    </div>
+  
+    <div class="footer-more">
+      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+    </div>
+  </body>
+</html>

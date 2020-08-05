@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="author" content="zchengsite, 1451426471@qq.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  
+  <title>too_secure | my blog</title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+<meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="my blog" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/"><img src="/images/blabla.jpg" alt=""></a>
+    <div class="nickname"><a href="/">blabla-my</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">分类</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">too_secure</div>
+      <div class="post-attach">
+        <span class="post-pubtime">2020-08-05</span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="类别 | categories"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/Crypto/" title="查看 Crypto 分类">
+                    <b>#</b> Crypto
+                  </a>
+                </span>
+                
+              </span>
+          
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="标签 | tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/cybrics-2020/" title="查看 cybrics-2020 标签">
+                    <b>#</b> cybrics-2020
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <h2 id="too-secure"><a href="#too-secure" class="headerlink" title="too_secure"></a>too_secure</h2><h3 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">Bob worries about security too much <span class="keyword">and</span> decided to change the original Pedersen commitment scheme adding there several steps. Find the vulnerability <span class="keyword">in</span> Bob’s system!</span><br><span class="line">    </span><br><span class="line"><span class="comment">#Initialization</span></span><br><span class="line"><span class="number">1</span>) Choose two big primes p <span class="keyword">and</span> q such that q|(p − <span class="number">1</span>) <span class="keyword">and</span> choose g ∈ Zmodp of order q.</span><br><span class="line"><span class="number">2</span>) Choose x ∈ Zmodq. x <span class="keyword">is</span> our secret.</span><br><span class="line"><span class="number">3</span>) Compute G = g^x mod p</span><br><span class="line"><span class="number">4</span>) Transform G into G0: <span class="number">1024</span>-bit binary number <span class="keyword">with</span> big endian.</span><br><span class="line"><span class="number">5</span>) Using hash-function SHA<span class="number">-512</span>, compute a = SHA512(G0)</span><br><span class="line"><span class="number">6</span>) Find a0: transform binary a into an integer number.</span><br><span class="line"><span class="number">7</span>) Find a1 = (a0^a0) mod φ(p), where φ(p) <span class="keyword">is</span> Euler function.</span><br><span class="line"><span class="number">8</span>) Finally, calculate h = g^a1 mod p.Parameters p <span class="keyword">and</span> g are well-known <span class="keyword">and</span> open <span class="keyword">for</span> everyone.</span><br><span class="line">    </span><br><span class="line"><span class="comment">#Commitment</span></span><br><span class="line">To make a commitment we choose a random r <span class="keyword">from</span> &#123;<span class="number">2</span>, . . . , p−<span class="number">1</span>&#125; <span class="keyword">and</span> calculate </span><br><span class="line">c = G· h^r. The commitment would be c.</span><br><span class="line"></span><br><span class="line"><span class="comment">#Proof</span></span><br><span class="line">After the decision <span class="keyword">is</span> made by sender <span class="keyword">and</span> verifier about the verification of the commitment,sender opens x <span class="keyword">and</span> r values, <span class="keyword">and</span> the verifier checks the equality c = G·hr.</span><br><span class="line"></span><br><span class="line"><span class="comment">#Additional information</span></span><br><span class="line">To get integer value <span class="keyword">from</span> the string S = S1S2 . . . Sn of n ASCII characters, use the following</span><br><span class="line">formula:</span><br><span class="line">func(S) = sigma(ASCII(Si+<span class="number">1</span>)·<span class="number">2</span>^(<span class="number">8</span>·i)) <span class="keyword">for</span> i <span class="keyword">from</span> <span class="number">0</span> to n<span class="number">-1</span></span><br><span class="line">where ASCII(...) <span class="keyword">is</span> an ASCII value of the character.</span><br><span class="line"></span><br><span class="line"><span class="comment">#Task</span></span><br><span class="line">Break the system <span class="keyword">with</span> the following parameters. As a result, you should get the value r2</span><br><span class="line">which you disclose to the verifier <span class="keyword">with</span> the string M2, <span class="keyword">and</span> the verifier confirms the commitment <span class="keyword">as</span> <span class="keyword">with</span> (M1, r1) <span class="keyword">as</span> <span class="keyword">with</span> (M2, r2).</span><br><span class="line">The parameters are:</span><br><span class="line">• p =<span class="number">12039102490128509125925019010000012423515617235219127649182470182570</span></span><br><span class="line"><span class="number">195018265927223</span></span><br><span class="line">• g =<span class="number">107290725793070521848483023224513321924562296190441811050630117415</span></span><br><span class="line"><span class="number">16558110216720725</span></span><br><span class="line">• r1 =<span class="number">31245182471</span></span><br><span class="line">• M1 = <span class="string">&#x27;Hi! I am Vadim Davydov from ITMO University&#x27;</span></span><br><span class="line">• M2 = <span class="string">&#x27;Transfer the points for easy task to this team&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">题目给了两组明文M1,M2</span><br><span class="line">M1,M2使用相同的公钥&lt;g,p&gt;生成commitment = G·h^r (mod p) <span class="comment">#这里应有mod p,题目可能是没写</span></span><br><span class="line">c1 = G1·h1^r1 (mod p)</span><br><span class="line">c2 = G2·h2^r2 (mod p)</span><br><span class="line">题目所谓的<span class="keyword">break</span>应为使：c1==c2</span><br><span class="line">这样就可以让接受方以为c2来自c1的发送方，从而达到了伪造消息的目的</span><br><span class="line"></span><br><span class="line">c1 == c2</span><br><span class="line"></span><br><span class="line">==&gt;    g^x1·h1^r1 == g^x2·h2^r2 (mod p)</span><br><span class="line">==&gt;    g^(x1+a1*r1) == g^(x2+a2*r2) (mod p)</span><br><span class="line"><span class="comment">#此处的a1,a2即为M1,M2分别按照计算步骤(7)计算得到的 &#x27;a1&#x27; </span></span><br><span class="line">==&gt;    x1+a1*r1 == x2+a2*r2  (mod loop(p))</span><br><span class="line"><span class="comment">#loop(p)是指使得任意u, u^y == 1 (mod p)成立的最小的l的值</span></span><br><span class="line"><span class="comment">#由于u^φ(p) == 1 (mod p) , 于是 loop(p) | φ(p)</span></span><br><span class="line"><span class="comment">#可以将φ(p) = p-1的因子一个个判断下是不是loop(p)</span></span><br><span class="line"></span><br><span class="line">==&gt;    r2 == ((x1-x2)+a1*r1) * inv(a2)  (mod p)</span><br><span class="line"><span class="comment">#这步计算就很简单了</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="exp"><a href="#exp" class="headerlink" title="exp"></a>exp</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> libnum <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> gmpy2 <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> hashlib <span class="keyword">import</span> sha512</span><br><span class="line">p =<span class="number">12039102490128509125925019010000012423515617235219127649182470182570195018265927223</span></span><br><span class="line">g =<span class="number">10729072579307052184848302322451332192456229619044181105063011741516558110216720725</span></span><br><span class="line">r1 =<span class="number">31245182471</span></span><br><span class="line"></span><br><span class="line">P1 = <span class="number">6</span></span><br><span class="line">P2 = <span class="number">7</span></span><br><span class="line">P3 = <span class="number">7</span></span><br><span class="line">P4 = <span class="number">3671</span></span><br><span class="line">P5 = <span class="number">10733</span></span><br><span class="line">P6 = <span class="number">1039300813886545966418005631983853921163721828798787466771912919828750891</span>      <span class="comment">#p循环节</span></span><br><span class="line">P = [P1,P2,P3,P4,P5,P6]</span><br><span class="line"><span class="comment">#print(P1*P2*P3*P4*P5*P6 == p-1)</span></span><br><span class="line"></span><br><span class="line">M1 = <span class="string">&#x27;Hi! I am Vadim Davydov from ITMO University&#x27;</span></span><br><span class="line">M2 = <span class="string">&#x27;Transfer the points for easy task to this team&#x27;</span></span><br><span class="line"></span><br><span class="line">x1 = s2n(M1[::<span class="number">-1</span>])</span><br><span class="line">x2 = s2n(M2[::<span class="number">-1</span>])</span><br><span class="line">G1 = pow(g,x1,p)</span><br><span class="line">G2 = pow(g,x2,p)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cal_a</span>(<span class="params">G</span>):</span></span><br><span class="line">    _G = G.to_bytes(<span class="number">1024</span>//<span class="number">8</span>,byteorder = <span class="string">&#x27;big&#x27;</span>)</span><br><span class="line">    h = sha512()</span><br><span class="line">    h.update(_G)</span><br><span class="line">    a = int.from_bytes(h.digest(),byteorder=<span class="string">&#x27;big&#x27;</span>)</span><br><span class="line">    _a = pow(a,a,p<span class="number">-1</span>)</span><br><span class="line">    <span class="keyword">return</span> _a</span><br><span class="line"></span><br><span class="line">a1 = cal_a(G1)</span><br><span class="line">a2 = cal_a(G2)</span><br><span class="line"><span class="comment">#print(a1,a2)</span></span><br><span class="line"></span><br><span class="line">h1 = pow(g,a1,p)</span><br><span class="line">h2 = pow(g,a2,p)</span><br><span class="line"><span class="comment">#print(h1,h2)</span></span><br><span class="line"></span><br><span class="line">_p = P6</span><br><span class="line"><span class="comment">#print(gcd(x1+a1*r1,_p))</span></span><br><span class="line">r2 = (((x1-x2)+a1*r1)*invert(a2,_p))%_p</span><br><span class="line">print(r2)</span><br><span class="line"></span><br><span class="line"><span class="comment">#check if result is right</span></span><br><span class="line">L = (G1*pow(h1,r1,p))%p</span><br><span class="line">R = (G2*pow(h2,r2,p))%p</span><br><span class="line">print(L==R)</span><br></pre></td></tr></table></figure>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2020/08/04/Crypto-you-raise-me-up/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>PREV</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">2020-08-05</span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="类别 | categories"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/Crypto/" title="查看 Crypto 分类">
+                        <b>#</b> Crypto
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="标签 | tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/cybrics-2020/" title="查看 cybrics-2020 标签">
+                        <b>#</b> cybrics-2020
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2020/08/05/broken-invitation/" target="_self">
+                <span>NEXT</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div class="post-catalog" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#too-secure"><span class="toc-text">too_secure</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%EF%BC%9A"><span class="toc-text">题目：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exp"><span class="toc-text">exp</span></a></li></ol></li></ol>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+      </div>
+    
+  </div>
+
+  
+        <div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/blabla-my/blabla-my.github.io">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    <div class="footer-more">
+      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © Oranges 2020</a>
+    </div>
+  
+    <div class="footer-more">
+      <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+    </div>
+  </body>
+</html>
